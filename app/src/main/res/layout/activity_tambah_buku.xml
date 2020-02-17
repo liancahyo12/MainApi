@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".TambahBuku">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/judule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul Buku"/>
+
+            <EditText
+                android:id="@+id/authore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Nama Author"/>
+
+
+            <EditText
+                android:id="@+id/sinopsise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sisnopsis"
+                android:inputType="textMultiLine"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/selimg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+                    <Button
+                        android:id="@+id/selimgbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih Gambar"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/selfile"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:id="@+id/selfilebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih File"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnSimpanBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="SIMPAN BUKU"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
