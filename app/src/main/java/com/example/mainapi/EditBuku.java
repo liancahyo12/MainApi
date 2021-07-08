@@ -73,7 +73,7 @@ public class EditBuku extends AppCompatActivity {
         builder.downloader(new OkHttp3Downloader(context));
         idd.setVisibility(View.GONE);
         cekrole();
-        builder.build().load("http://192.168.137.1/mainapibuku/src/uploads/"+mIntent.getStringExtra("cover"))
+        builder.build().load("http://192.168.137.1/mainapibuku/src/uploads/a"+mIntent.getStringExtra("cover"))
                 .placeholder((R.drawable.ic_launcher_background))
                 .error(R.drawable.ic_launcher_background)
                 .into(imgd);
